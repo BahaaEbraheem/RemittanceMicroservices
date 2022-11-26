@@ -19,6 +19,18 @@
           "Path": "/api/catalog/{**everything}"
         }
       },
+      "Currency Service": {
+        "ClusterId": "currencyCluster",
+        "Match": {
+          "Path": "/api/currency/{**everything}"
+        }
+      },
+      "Customer Service": {
+        "ClusterId": "customerCluster",
+        "Match": {
+          "Path": "/api/customer/{**everything}"
+        }
+      },
       "Basket Service": {
         "ClusterId": "basketCluster",
         "Match": {
@@ -91,7 +103,7 @@
             "Address": "https://localhost:44355"
           }
         }
-      },            
+      },
       "orderingCluster": {
         "Destinations": {
           "destination1": {
@@ -117,6 +129,20 @@
         "Destinations": {
           "destination1": {
             "Address": "https://localhost:44354"
+          }
+        }
+      },
+      "currencyCluster": {
+        "Destinations": {
+          "destination1": {
+            "Address": "https://localhost:44311"
+          }
+        }
+      },
+      "customerCluster": {
+        "Destinations": {
+          "destination1": {
+            "Address": "https://localhost:44375"
           }
         }
       }

@@ -1,0 +1,111 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "EShopOnAbp.CustomerService.Domain.Shared": {
+      "path": "src/EShopOnAbp.CustomerService.Domain.Shared/EShopOnAbp.CustomerService.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CustomerService.Domain": {
+      "path": "src/EShopOnAbp.CustomerService.Domain/EShopOnAbp.CustomerService.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CustomerService.Application.Contracts": {
+      "path": "src/EShopOnAbp.CustomerService.Application.Contracts/EShopOnAbp.CustomerService.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CustomerService.Application": {
+      "path": "src/EShopOnAbp.CustomerService.Application/EShopOnAbp.CustomerService.Application.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CustomerService.EntityFrameworkCore": {
+      "path": "src/EShopOnAbp.CustomerService.EntityFrameworkCore/EShopOnAbp.CustomerService.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CustomerService.MongoDB": {
+      "path": "src/EShopOnAbp.CustomerService.MongoDB/EShopOnAbp.CustomerService.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CustomerService.HttpApi": {
+      "path": "src/EShopOnAbp.CustomerService.HttpApi/EShopOnAbp.CustomerService.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CustomerService.HttpApi.Client": {
+      "path": "src/EShopOnAbp.CustomerService.HttpApi.Client/EShopOnAbp.CustomerService.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CustomerService.TestBase": {
+      "path": "test/EShopOnAbp.CustomerService.TestBase/EShopOnAbp.CustomerService.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "EShopOnAbp.CustomerService.EntityFrameworkCore.Tests": {
+      "path": "test/EShopOnAbp.CustomerService.EntityFrameworkCore.Tests/EShopOnAbp.CustomerService.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "EShopOnAbp.CustomerService.MongoDB.Tests": {
+      "path": "test/EShopOnAbp.CustomerService.MongoDB.Tests/EShopOnAbp.CustomerService.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "EShopOnAbp.CustomerService.Domain.Tests": {
+      "path": "test/EShopOnAbp.CustomerService.Domain.Tests/EShopOnAbp.CustomerService.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "EShopOnAbp.CustomerService.Application.Tests": {
+      "path": "test/EShopOnAbp.CustomerService.Application.Tests/EShopOnAbp.CustomerService.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "EShopOnAbp.CustomerService.HttpApi.Host": {
+      "path": "host/EShopOnAbp.CustomerService.HttpApi.Host/EShopOnAbp.CustomerService.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "EShopOnAbp.CustomerService.Web": {
+      "path": "src/EShopOnAbp.CustomerService.Web/EShopOnAbp.CustomerService.Web.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CustomerService.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/EShopOnAbp.CustomerService.HttpApi.Client.ConsoleTestApp/EShopOnAbp.CustomerService.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "EShopOnAbp.CustomerService.Web.Host": {
+      "path": "host/EShopOnAbp.CustomerService.Web.Host/EShopOnAbp.CustomerService.Web.Host.abppkg.json",
+      "folder": "host"
+    },
+    "EShopOnAbp.CustomerService.AuthServer": {
+      "path": "host/EShopOnAbp.CustomerService.AuthServer/EShopOnAbp.CustomerService.AuthServer.abppkg.json",
+      "folder": "host"
+    },
+    "EShopOnAbp.CustomerService.Host.Shared": {
+      "path": "host/EShopOnAbp.CustomerService.Host.Shared/EShopOnAbp.CustomerService.Host.Shared.abppkg.json",
+      "folder": "host"
+    },
+    "EShopOnAbp.CustomerService.Web.Unified": {
+      "path": "host/EShopOnAbp.CustomerService.Web.Unified/EShopOnAbp.CustomerService.Web.Unified.abppkg.json",
+      "folder": "host"
+    },
+    "EShopOnAbp.CustomerService.Blazor": {
+      "path": "src/EShopOnAbp.CustomerService.Blazor/EShopOnAbp.CustomerService.Blazor.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CustomerService.Blazor.Host": {
+      "path": "host/EShopOnAbp.CustomerService.Blazor.Host/EShopOnAbp.CustomerService.Blazor.Host.abppkg.json",
+      "folder": "host"
+    },
+    "EShopOnAbp.CustomerService.Blazor.Server": {
+      "path": "src/EShopOnAbp.CustomerService.Blazor.Server/EShopOnAbp.CustomerService.Blazor.Server.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CustomerService.Blazor.WebAssembly": {
+      "path": "src/EShopOnAbp.CustomerService.Blazor.WebAssembly/EShopOnAbp.CustomerService.Blazor.WebAssembly.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CustomerService.Blazor.Server.Host": {
+      "path": "host/EShopOnAbp.CustomerService.Blazor.Server.Host/EShopOnAbp.CustomerService.Blazor.Server.Host.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

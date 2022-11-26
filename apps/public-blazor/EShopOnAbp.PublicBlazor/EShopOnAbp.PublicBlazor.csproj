@@ -1,0 +1,159 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCoreRateLimit" Version="4.0.2" />
+    <PackageReference Include="Blazorise.Bootstrap5" Version="1.0.4" />
+    <PackageReference Include="Blazorise.Icons.FontAwesome" Version="1.0.4" />
+    <PackageReference Include="Serilog.AspNetCore" Version="5.0.0" />
+    <PackageReference Include="Serilog.Sinks.Async" Version="1.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Components.Server.LeptonXLiteTheme" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Autofac" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.Swashbuckle" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Serilog" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.SqlServer" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Account.Application" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.Account.HttpApi" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.Account.Web.OpenIddict" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.PermissionManagement.Domain.Identity" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.Identity.HttpApi" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.Identity.EntityFrameworkCore" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.OpenIddict.EntityFrameworkCore" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.Identity.Blazor.Server" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.PermissionManagement.Domain.OpenIddict" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.EntityFrameworkCore" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.HttpApi" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.TenantManagement.EntityFrameworkCore" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.TenantManagement.HttpApi" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Blazor.Server" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.EntityFrameworkCore" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.HttpApi" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Blazor.Server" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.SettingManagement.Application" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.SettingManagement.EntityFrameworkCore" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.SettingManagement.HttpApi" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Blazor.Server" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AuditLogging.EntityFrameworkCore" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Account.Web.IdentityServer" Version="6.0.0" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
+
+
+
+
+
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.StackExchangeRedis" Version="6.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="6.0.7" />
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="6.0.1" />
+    <PackageReference Include="Volo.CmsKit.Public.Web" Version="6.0.0" />
+    <PackageReference Include="Yarp.ReverseProxy" Version="1.0.0" />
+    <PackageReference Include="Volo.Abp.Caching.StackExchangeRedis" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.EventBus.RabbitMQ" Version="6.0.0" />
+    <PackageReference Include="Volo.Abp.Http.Client.IdentityModel.Web" Version="6.0.0" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Authentication.OpenIdConnect" Version="6.0.0" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc.Client" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc.UI.Theme.LeptonXLite" Version="1.0.0-rc.7" />
+    <PackageReference Include="Volo.Abp.Account.HttpApi.Client" Version="6.0.0" />
+    <PackageReference Include="Volo.Abp.AspNetCore.SignalR" Version="6.0.1" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>compile; contentFiles; build; buildMultitargeting; buildTransitive; analyzers; native</PrivateAssets>
+    </PackageReference>
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\shared\EShopOnAbp.Shared.Localization\EShopOnAbp.Shared.Localization.csproj" />
+    <ProjectReference Include="..\..\..\services\cmskit\src\EShopOnAbp.CmskitService.HttpApi.Client\EShopOnAbp.CmskitService.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\..\..\shared\EShopOnAbp.Shared.Hosting.AspNetCore\EShopOnAbp.Shared.Hosting.AspNetCore.csproj" />
+
+
+    <ProjectReference Include="..\..\..\services\currency\src\EShopOnAbp.CurrencyService.HttpApi.Client\EShopOnAbp.CurrencyService.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\..\..\services\currency\src\EShopOnAbp.CurrencyService.Blazor\EShopOnAbp.CurrencyService.Blazor.csproj" />
+        <ProjectReference Include="..\..\..\services\currency\src\EShopOnAbp.CurrencyService.Application\EShopOnAbp.CurrencyService.Application.csproj" />
+    <ProjectReference Include="..\..\..\services\currency\src\EShopOnAbp.CurrencyService.Application.Contracts\EShopOnAbp.CurrencyService.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\services\currency\src\EShopOnAbp.CurrencyService.Blazor.Server\EShopOnAbp.CurrencyService.Blazor.Server.csproj" />
+    <ProjectReference Include="..\..\..\services\currency\src\EShopOnAbp.CurrencyService.EntityFrameworkCore\EShopOnAbp.CurrencyService.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\..\services\currency\src\EShopOnAbp.CurrencyService.HttpApi\EShopOnAbp.CurrencyService.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\services\currency\host\EShopOnAbp.CurrencyService.Host.Shared\EShopOnAbp.CurrencyService.Host.Shared.csproj" />
+
+
+        <ProjectReference Include="..\..\..\services\customer\src\EShopOnAbp.CustomerService.Application\EShopOnAbp.CustomerService.Application.csproj" />
+    <ProjectReference Include="..\..\..\services\customer\src\EShopOnAbp.CustomerService.Application.Contracts\EShopOnAbp.CustomerService.Application.Contracts.csproj" />
+    <ProjectReference Include="..\..\..\services\customer\src\EShopOnAbp.CustomerService.HttpApi\EShopOnAbp.CustomerService.HttpApi.csproj" />
+    <ProjectReference Include="..\..\..\services\customer\src\EShopOnAbp.CustomerService.HttpApi.Client\EShopOnAbp.CustomerService.HttpApi.Client.csproj" />
+    <ProjectReference Include="..\..\..\services\customer\src\EShopOnAbp.CustomerService.Blazor\EShopOnAbp.CustomerService.Blazor.csproj" />
+        <ProjectReference Include="..\..\..\services\customer\src\EShopOnAbp.CustomerService.Blazor.Server\EShopOnAbp.CustomerService.Blazor.Server.csproj" />
+    <ProjectReference Include="..\..\..\services\customer\src\EShopOnAbp.CustomerService.EntityFrameworkCore\EShopOnAbp.CustomerService.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\..\..\services\customer\host\EShopOnAbp.CustomerService.Host.Shared\EShopOnAbp.CustomerService.Host.Shared.csproj" />
+
+
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Compile Remove="Logs\**" />
+    <Content Remove="Logs\**" />
+    <EmbeddedResource Remove="Logs\**" />
+    <None Remove="Logs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="**\*generate-proxy.json" />
+    <Content Remove="**\*generate-proxy.json" />
+  </ItemGroup>
+
+  
+
+  <ItemGroup>
+    <Content Remove="$(UserProfile)\.nuget\packages\*\*\contentFiles\any\*\*.abppkg*.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pages\Currencies\Currencies.razor" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pages\Customers\Customers.razor" />
+  </ItemGroup>
+</Project>

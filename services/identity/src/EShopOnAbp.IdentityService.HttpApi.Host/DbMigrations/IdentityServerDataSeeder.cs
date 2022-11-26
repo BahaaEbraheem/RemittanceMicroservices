@@ -91,6 +91,8 @@ public class IdentityServerDataSeeder : IDataSeedContributor, ITransientDependen
         await CreateApiResourceAsync("OrderingService", commonApiUserClaims);
         await CreateApiResourceAsync("PaymentService", commonApiUserClaims);
         await CreateApiResourceAsync("CmskitService", commonApiUserClaims);
+		await CreateApiResourceAsync("CurrencyService", commonApiUserClaims);
+        await CreateApiResourceAsync("CustomerService", commonApiUserClaims);
     }
 
     private async Task CreateApiScopesAsync()
@@ -103,6 +105,8 @@ public class IdentityServerDataSeeder : IDataSeedContributor, ITransientDependen
         await CreateApiScopeAsync("OrderingService");
         await CreateApiScopeAsync("PaymentService");
         await CreateApiScopeAsync("CmskitService");
+		await CreateApiScopeAsync("CurrencyService");
+        await CreateApiScopeAsync("CustomerService");
     }
 
     private async Task CreateSwaggerClientsAsync()
@@ -117,7 +121,9 @@ public class IdentityServerDataSeeder : IDataSeedContributor, ITransientDependen
                 "BasketService",
                 "PaymentService",
                 "OrderingService",
-                "CmskitService"
+                "CmskitService",
+				 "CurrencyService",
+                "CustomerService"
             });
     }
 
@@ -148,6 +154,8 @@ public class IdentityServerDataSeeder : IDataSeedContributor, ITransientDependen
             var orderingServiceRootUrl = _configuration[$"IdentityServerClients:OrderingService:RootUrl"].TrimEnd('/');
             var paymentServiceRootUrl = _configuration[$"IdentityServerClients:PaymentService:RootUrl"].TrimEnd('/');
             var cmskitServiceRootUrl = _configuration[$"IdentityServerClients:CmskitService:RootUrl"].TrimEnd('/');
+            var currencyServiceRootUrl = _configuration[$"IdentityServerClients:CurrencyService:RootUrl"].TrimEnd('/');
+            var customerServiceRootUrl = _configuration[$"IdentityServerClients:CustomerService:RootUrl"].TrimEnd('/');
 
             await CreateClientAsync(
                 name: swaggerClientId,
@@ -166,8 +174,11 @@ public class IdentityServerDataSeeder : IDataSeedContributor, ITransientDependen
                     $"{basketServiceRootUrl}/swagger/oauth2-redirect.html", // BasketService redirect uri
                     $"{orderingServiceRootUrl}/swagger/oauth2-redirect.html", // OrderingService redirect uri
                     $"{paymentServiceRootUrl}/swagger/oauth2-redirect.html", // PaymentService redirect uri
-                    $"{cmskitServiceRootUrl}/swagger/oauth2-redirect.html" // CmskitService redirect uri
-                },
+                    $"{cmskitServiceRootUrl}/swagger/oauth2-redirect.html", // CmskitService redirect uri
+                    $"{currencyServiceRootUrl}/swagger/oauth2-redirect.html", // CurrencyService redirect uri
+                    $"{customerServiceRootUrl}/swagger/oauth2-redirect.html" // customerService redirect uri
+               
+			   },
                 corsOrigins: new[]
                 {
                     webGatewaySwaggerRootUrl.RemovePostFix("/"),
@@ -179,7 +190,9 @@ public class IdentityServerDataSeeder : IDataSeedContributor, ITransientDependen
                     basketServiceRootUrl.RemovePostFix("/"),
                     orderingServiceRootUrl.RemovePostFix("/"),
                     paymentServiceRootUrl.RemovePostFix("/"),
-                    cmskitServiceRootUrl.RemovePostFix("/")
+                    cmskitServiceRootUrl.RemovePostFix("/"),
+					 currencyServiceRootUrl.RemovePostFix("/"),
+                    customerServiceRootUrl.RemovePostFix("/"),
                 }
             );
         }
@@ -255,7 +268,9 @@ public class IdentityServerDataSeeder : IDataSeedContributor, ITransientDependen
                 "BasketService",
                 "PaymentService",
                 "OrderingService",
-                "CmskitService"
+                "CmskitService",
+				"CurrencyService",
+                "CustomerService"
             }),
             grantTypes: new[] { "hybrid" },
             secret: "1q2w3e*".Sha256(),
@@ -264,6 +279,37 @@ public class IdentityServerDataSeeder : IDataSeedContributor, ITransientDependen
             frontChannelLogoutUri: $"{publicWebClientRootUrl}Account/FrontChannelLogout",
             corsOrigins: new[] { publicWebClientRootUrl.RemovePostFix("/") }
         );
+
+
+
+        //Public Blazor Server Client
+        var publicBlazorServerClientRootUrl = _configuration["IdentityServerClients:PublicBlazor:RootUrl"]
+            .EnsureEndsWith('/');
+        await CreateClientAsync(
+            name: "PublicBlazor",
+            scopes: commonScopes.Union(new[]
+            {
+                "AccountService",
+                "AdministrationService",
+                "CatalogService",
+                "BasketService",
+                "PaymentService",
+                "OrderingService",
+                "CmskitService",
+                "CurrencyService",
+                "CustomerService"
+            }),
+            grantTypes: new[] { "hybrid" },
+            secret: "1q2w3e*".Sha256(),
+            redirectUris: new List<string> { $"{publicBlazorServerClientRootUrl}signin-oidc" },
+            postLogoutRedirectUri: $"{publicBlazorServerClientRootUrl}signout-callback-oidc",
+            frontChannelLogoutUri: $"{publicBlazorServerClientRootUrl}Account/FrontChannelLogout",
+            corsOrigins: new[] { publicBlazorServerClientRootUrl.RemovePostFix("/") }
+        );
+
+
+
+
 
         //Angular Client
         var angularClientRootUrl =
@@ -277,7 +323,9 @@ public class IdentityServerDataSeeder : IDataSeedContributor, ITransientDependen
                 "AdministrationService",
                 "CatalogService",
                 "OrderingService",
-                "CmskitService"
+                "CmskitService",
+				"CurrencyService",
+                "CustomerService"
             }),
             grantTypes: new[] { "authorization_code", "LinkLogin", "password" },
             secret: "1q2w3e*".Sha256(),

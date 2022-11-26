@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>EShopOnAbp.CustomerService</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="6.0.1" />
+    <ProjectReference Include="..\EShopOnAbp.CustomerService.Application.Contracts\EShopOnAbp.CustomerService.Application.Contracts.csproj" />
+    <ProjectReference Include="..\EShopOnAbp.CustomerService.Domain\EShopOnAbp.CustomerService.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

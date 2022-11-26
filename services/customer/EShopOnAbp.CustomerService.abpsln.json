@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "EShopOnAbp.CustomerService": {
+      "path": "EShopOnAbp.CustomerService.abpmdl.json"
+    }
+  }
+}

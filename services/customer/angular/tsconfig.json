@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.prod.json",
+  "compilerOptions": {
+    "paths": {
+      "@e-shop-on-abp/customer-service": [
+        "projects/customer-service/src/public-api.ts"
+      ],
+      "@e-shop-on-abp/customer-service/config": [
+        "projects/customer-service/config/src/public-api.ts"
+      ],
+      "@proxy": ["projects/customer-service/src/lib/proxy/index.ts"],
+      "@proxy/*": ["projects/customer-service/src/lib/proxy/*"]
+    }
+  }
+}

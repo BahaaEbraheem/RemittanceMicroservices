@@ -90,6 +90,8 @@ public class KeyCloakDataSeeder : IDataSeedContributor, ITransientDependency
         await CreateScopeAsync("OrderingService");
         await CreateScopeAsync("PaymentService");
         await CreateScopeAsync("CmskitService");
+        await CreateScopeAsync("CurrencyService");
+        await CreateScopeAsync("CustomerService");
     }
 
     private async Task CreateScopeAsync(string scopeName)
@@ -280,7 +282,7 @@ public class KeyCloakDataSeeder : IDataSeedContributor, ITransientDependency
                 new List<string>
                 {
                     "AdministrationService", "IdentityService", "BasketService", "CatalogService",
-                    "OrderingService", "PaymentService", "CmskitService"
+                    "OrderingService", "PaymentService", "CmskitService","CurrencyService","CustomerService"
                 }
             );
         }
@@ -304,6 +306,9 @@ public class KeyCloakDataSeeder : IDataSeedContributor, ITransientDependency
             var orderingServiceRootUrl = _configuration[$"Clients:OrderingService:RootUrl"].TrimEnd('/');
             var paymentServiceRootUrl = _configuration[$"Clients:PaymentService:RootUrl"].TrimEnd('/');
             var cmskitServiceRootUrl = _configuration[$"Clients:CmskitService:RootUrl"].TrimEnd('/');
+            var currencyServiceRootUrl = _configuration[$"Clients:CurrencyService:RootUrl"].TrimEnd('/');
+            var customerServiceRootUrl = _configuration[$"Clients:CustomerService:RootUrl"].TrimEnd('/');
+
 
             swaggerClient = new Client
             {
@@ -322,7 +327,9 @@ public class KeyCloakDataSeeder : IDataSeedContributor, ITransientDependency
                     $"{basketServiceRootUrl}/swagger/oauth2-redirect.html", // BasketService redirect uri
                     $"{orderingServiceRootUrl}/swagger/oauth2-redirect.html", // OrderingService redirect uri
                     $"{paymentServiceRootUrl}/swagger/oauth2-redirect.html", // PaymentService redirect uri
-                    $"{cmskitServiceRootUrl}/swagger/oauth2-redirect.html" // CmskitService redirect uri
+                    $"{cmskitServiceRootUrl}/swagger/oauth2-redirect.html" ,// CmskitService redirect uri
+                    $"{currencyServiceRootUrl}/swagger/oauth2-redirect.html", // CurrencyService redirect uri
+                    $"{customerServiceRootUrl}/swagger/oauth2-redirect.html" // CurrencyService redirect uri
                 },
                 FrontChannelLogout = true,
                 PublicClient = true
@@ -367,7 +374,7 @@ public class KeyCloakDataSeeder : IDataSeedContributor, ITransientDependency
                 new List<string>
                 {
                     "AdministrationService", "IdentityService", "BasketService", "CatalogService",
-                    "OrderingService", "PaymentService", "CmskitService"
+                    "OrderingService", "PaymentService", "CmskitService","CurrencyService","CustomerService"
                 }
             );
         }

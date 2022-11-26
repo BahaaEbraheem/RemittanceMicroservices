@@ -1,0 +1,116 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {},
+      "auth-server": {}
+    }
+  },
+  "packages": {
+    "EShopOnAbp.CurrencyService.Domain.Shared": {
+      "path": "src/EShopOnAbp.CurrencyService.Domain.Shared/EShopOnAbp.CurrencyService.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CurrencyService.Domain": {
+      "path": "src/EShopOnAbp.CurrencyService.Domain/EShopOnAbp.CurrencyService.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CurrencyService.Application.Contracts": {
+      "path": "src/EShopOnAbp.CurrencyService.Application.Contracts/EShopOnAbp.CurrencyService.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CurrencyService.Application": {
+      "path": "src/EShopOnAbp.CurrencyService.Application/EShopOnAbp.CurrencyService.Application.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CurrencyService.EntityFrameworkCore": {
+      "path": "src/EShopOnAbp.CurrencyService.EntityFrameworkCore/EShopOnAbp.CurrencyService.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CurrencyService.MongoDB": {
+      "path": "src/EShopOnAbp.CurrencyService.MongoDB/EShopOnAbp.CurrencyService.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CurrencyService.HttpApi": {
+      "path": "src/EShopOnAbp.CurrencyService.HttpApi/EShopOnAbp.CurrencyService.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CurrencyService.HttpApi.Client": {
+      "path": "src/EShopOnAbp.CurrencyService.HttpApi.Client/EShopOnAbp.CurrencyService.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CurrencyService.TestBase": {
+      "path": "test/EShopOnAbp.CurrencyService.TestBase/EShopOnAbp.CurrencyService.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "EShopOnAbp.CurrencyService.EntityFrameworkCore.Tests": {
+      "path": "test/EShopOnAbp.CurrencyService.EntityFrameworkCore.Tests/EShopOnAbp.CurrencyService.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "EShopOnAbp.CurrencyService.MongoDB.Tests": {
+      "path": "test/EShopOnAbp.CurrencyService.MongoDB.Tests/EShopOnAbp.CurrencyService.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "EShopOnAbp.CurrencyService.Domain.Tests": {
+      "path": "test/EShopOnAbp.CurrencyService.Domain.Tests/EShopOnAbp.CurrencyService.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "EShopOnAbp.CurrencyService.Application.Tests": {
+      "path": "test/EShopOnAbp.CurrencyService.Application.Tests/EShopOnAbp.CurrencyService.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "EShopOnAbp.CurrencyService.HttpApi.Host": {
+      "path": "host/EShopOnAbp.CurrencyService.HttpApi.Host/EShopOnAbp.CurrencyService.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "EShopOnAbp.CurrencyService.Web": {
+      "path": "src/EShopOnAbp.CurrencyService.Web/EShopOnAbp.CurrencyService.Web.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CurrencyService.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/EShopOnAbp.CurrencyService.HttpApi.Client.ConsoleTestApp/EShopOnAbp.CurrencyService.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "EShopOnAbp.CurrencyService.Web.Host": {
+      "path": "host/EShopOnAbp.CurrencyService.Web.Host/EShopOnAbp.CurrencyService.Web.Host.abppkg.json",
+      "folder": "host"
+    },
+    //"EShopOnAbp.CurrencyService.AuthServer": {
+    //  "path": "host/EShopOnAbp.CurrencyService.AuthServer/EShopOnAbp.CurrencyService.AuthServer.abppkg.json",
+    //  "folder": "host"
+    //},
+    "EShopOnAbp.AuthServer": {
+      "path": "auth-server/src/EShopOnAbp.AuthServer/EShopOnAbp.AuthServer.abppkg.json",
+      "folder": "auth-server"
+    },
+    "EShopOnAbp.CurrencyService.Host.Shared": {
+      "path": "host/EShopOnAbp.CurrencyService.Host.Shared/EShopOnAbp.CurrencyService.Host.Shared.abppkg.json",
+      "folder": "host"
+    },
+    "EShopOnAbp.CurrencyService.Web.Unified": {
+      "path": "host/EShopOnAbp.CurrencyService.Web.Unified/EShopOnAbp.CurrencyService.Web.Unified.abppkg.json",
+      "folder": "host"
+    },
+    "EShopOnAbp.CurrencyService.Blazor": {
+      "path": "src/EShopOnAbp.CurrencyService.Blazor/EShopOnAbp.CurrencyService.Blazor.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CurrencyService.Blazor.Host": {
+      "path": "host/EShopOnAbp.CurrencyService.Blazor.Host/EShopOnAbp.CurrencyService.Blazor.Host.abppkg.json",
+      "folder": "host"
+    },
+    "EShopOnAbp.CurrencyService.Blazor.Server": {
+      "path": "src/EShopOnAbp.CurrencyService.Blazor.Server/EShopOnAbp.CurrencyService.Blazor.Server.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CurrencyService.Blazor.WebAssembly": {
+      "path": "src/EShopOnAbp.CurrencyService.Blazor.WebAssembly/EShopOnAbp.CurrencyService.Blazor.WebAssembly.abppkg.json",
+      "folder": "src"
+    },
+    "EShopOnAbp.CurrencyService.Blazor.Server.Host": {
+      "path": "host/EShopOnAbp.CurrencyService.Blazor.Server.Host/EShopOnAbp.CurrencyService.Blazor.Server.Host.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

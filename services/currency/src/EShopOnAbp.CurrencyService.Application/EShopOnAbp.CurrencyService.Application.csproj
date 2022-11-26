@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>EShopOnAbp.CurrencyService</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="6.0.1" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="6.0.1" />
+    <ProjectReference Include="..\EShopOnAbp.CurrencyService.Application.Contracts\EShopOnAbp.CurrencyService.Application.Contracts.csproj" />
+    <ProjectReference Include="..\EShopOnAbp.CurrencyService.Domain\EShopOnAbp.CurrencyService.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

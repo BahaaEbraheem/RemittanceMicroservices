@@ -1,0 +1,1 @@
+dotnet run --project EShopOnAbp.PublicBlazor --migrate-database

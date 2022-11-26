@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.prod.json",
+  "compilerOptions": {
+    "paths": {
+      "@e-shop-on-abp/currency-service": [
+        "projects/currency-service/src/public-api.ts"
+      ],
+      "@e-shop-on-abp/currency-service/config": [
+        "projects/currency-service/config/src/public-api.ts"
+      ],
+      "@proxy": ["projects/currency-service/src/lib/proxy/index.ts"],
+      "@proxy/*": ["projects/currency-service/src/lib/proxy/*"]
+    }
+  }
+}

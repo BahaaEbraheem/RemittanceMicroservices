@@ -51,19 +51,7 @@ public class CatalogServiceDatabaseMigrationChecker : PendingEfCoreMigrationsChe
         {
             var multiTenancySide = MultiTenancySides.Host;
 
-            //var permissionNames = _permissionDefinitionManager
-            //    .GetPermissions()
-            //    .Where(p => p.MultiTenancySide.HasFlag(multiTenancySide))
-            //    .Where(p => !p.Providers.Any() ||
-            //                p.Providers.Contains(RolePermissionValueProvider.ProviderName))
-            //    .Select(p => p.Name)
-            //    .ToArray();
-
-            //await _permissionDataSeeder.SeedAsync(
-            //    RolePermissionValueProvider.ProviderName,
-            //    "admin",
-            //    permissionNames
-            //);
+    
               if (await _productRepository.GetCountAsync() > 0)
         {
             return;

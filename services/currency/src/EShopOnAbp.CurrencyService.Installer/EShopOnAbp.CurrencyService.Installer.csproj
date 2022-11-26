@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\common.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+        <RootNamespace>EShopOnAbp.CurrencyService</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Volo.Abp.VirtualFileSystem" Version="6.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="..\..\EShopOnAbp.CurrencyService.abpmdl.json" />
+      <EmbeddedResource Include="..\..\EShopOnAbp.CurrencyService.abpmdl.json" />
+    </ItemGroup>
+
+</Project>

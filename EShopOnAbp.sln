@@ -43,7 +43,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShopOnAbp.BasketService", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShopOnAbp.CmskitService.HttpApi.Host", "services\cmskit\src\EShopOnAbp.CmskitService.HttpApi.Host\EShopOnAbp.CmskitService.HttpApi.Host.csproj", "{D5B9D5A5-44AA-42F8-867C-95B54780C9DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShopOnAbp.Keycloak.DbMigrator", "shared\EShopOnAbp.Keycloak.DbMigrator\EShopOnAbp.Keycloak.DbMigrator.csproj", "{774C6ADF-BDD0-431C-A9F3-8BAFD5A49C8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShopOnAbp.Keycloak.DbMigrator", "shared\EShopOnAbp.Keycloak.DbMigrator\EShopOnAbp.Keycloak.DbMigrator.csproj", "{774C6ADF-BDD0-431C-A9F3-8BAFD5A49C8C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShopOnAbp.CurrencyService.HttpApi.Host", "services\currency\host\EShopOnAbp.CurrencyService.HttpApi.Host\EShopOnAbp.CurrencyService.HttpApi.Host.csproj", "{4A89EA3E-FFFF-406F-B43E-5AB6E7EDAFB1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShopOnAbp.CustomerService.HttpApi.Host", "services\customer\host\EShopOnAbp.CustomerService.HttpApi.Host\EShopOnAbp.CustomerService.HttpApi.Host.csproj", "{ED9D9F19-27FC-4860-BA1D-517AB3EDABCB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShopOnAbp.PublicBlazor", "apps\public-blazor\EShopOnAbp.PublicBlazor\EShopOnAbp.PublicBlazor.csproj", "{409B18D6-51E3-40B9-8EB5-857141A16900}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -119,6 +125,18 @@ Global
 		{774C6ADF-BDD0-431C-A9F3-8BAFD5A49C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{774C6ADF-BDD0-431C-A9F3-8BAFD5A49C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{774C6ADF-BDD0-431C-A9F3-8BAFD5A49C8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A89EA3E-FFFF-406F-B43E-5AB6E7EDAFB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A89EA3E-FFFF-406F-B43E-5AB6E7EDAFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A89EA3E-FFFF-406F-B43E-5AB6E7EDAFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A89EA3E-FFFF-406F-B43E-5AB6E7EDAFB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED9D9F19-27FC-4860-BA1D-517AB3EDABCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED9D9F19-27FC-4860-BA1D-517AB3EDABCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED9D9F19-27FC-4860-BA1D-517AB3EDABCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED9D9F19-27FC-4860-BA1D-517AB3EDABCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{409B18D6-51E3-40B9-8EB5-857141A16900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{409B18D6-51E3-40B9-8EB5-857141A16900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{409B18D6-51E3-40B9-8EB5-857141A16900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{409B18D6-51E3-40B9-8EB5-857141A16900}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -141,6 +159,9 @@ Global
 		{E373DD66-3247-4D95-B325-064BBBC337B1} = {F415FFFD-E52D-4EBE-98DC-067C1EFFFFE3}
 		{D5B9D5A5-44AA-42F8-867C-95B54780C9DC} = {F415FFFD-E52D-4EBE-98DC-067C1EFFFFE3}
 		{774C6ADF-BDD0-431C-A9F3-8BAFD5A49C8C} = {B8B59303-2178-459B-91A8-DF353044E090}
+		{4A89EA3E-FFFF-406F-B43E-5AB6E7EDAFB1} = {F415FFFD-E52D-4EBE-98DC-067C1EFFFFE3}
+		{ED9D9F19-27FC-4860-BA1D-517AB3EDABCB} = {F415FFFD-E52D-4EBE-98DC-067C1EFFFFE3}
+		{409B18D6-51E3-40B9-8EB5-857141A16900} = {866DB6CC-FEA8-4CC2-A2E4-143537D197B6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {26F82565-C6A4-439D-93A4-3251E3E7D5B0}
