@@ -84,6 +84,7 @@ using EShopOnAbp.CustomerService.Blazor;
 using EShopOnAbp.CustomerService.EntityFrameworkCore;
 using EShopOnAbp.CustomerService.Blazor.Server;
 using EShopOnAbp.PublicBlazor.Data;
+using EShopOnAbp.Shared.Hosting.Microservices;
 
 namespace EShopOnAbp.PublicBlazor;
 
@@ -151,6 +152,10 @@ namespace EShopOnAbp.PublicBlazor;
     typeof(AbpAutoMapperModule),
         typeof(CmskitServiceHttpApiClientModule),
      typeof(AbpHttpClientModule),
+
+     typeof(EShopOnAbpSharedHostingMicroservicesModule),
+
+
 
         // Currency module packages
         typeof(CurrencyServiceEntityFrameworkCoreModule),

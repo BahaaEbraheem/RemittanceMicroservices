@@ -105,6 +105,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\shared\EShopOnAbp.Shared.Hosting.Microservices\EShopOnAbp.Shared.Hosting.Microservices.csproj" />
     <ProjectReference Include="..\..\..\shared\EShopOnAbp.Shared.Localization\EShopOnAbp.Shared.Localization.csproj" />
     <ProjectReference Include="..\..\..\services\cmskit\src\EShopOnAbp.CmskitService.HttpApi.Client\EShopOnAbp.CmskitService.HttpApi.Client.csproj" />
     <ProjectReference Include="..\..\..\shared\EShopOnAbp.Shared.Hosting.AspNetCore\EShopOnAbp.Shared.Hosting.AspNetCore.csproj" />

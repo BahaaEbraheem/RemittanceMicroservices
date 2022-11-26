@@ -33,8 +33,8 @@ public class PublicBlazorDbContext : AbpDbContext<PublicBlazorDbContext>
         builder.ConfigureOpenIddict();
         builder.ConfigureFeatureManagement();
         builder.ConfigureTenantManagement();
-        builder.ConfigureCurrencyService();
-        builder.ConfigureCustomerService();
+        //builder.ConfigureCurrencyService();
+        //builder.ConfigureCustomerService();
 
         /* Configure your own entities here */
     }
