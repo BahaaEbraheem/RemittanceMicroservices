@@ -376,9 +376,29 @@ public class PublicBlazorModule : AbpModule
         ConfigureAutoApiControllers();
         ConfigureBlazorise(context);
         ConfigureRouter(context);
-       //ConfigureEfCore(context);
+      // ConfigureEfCore(context);
     }
 
+    //private void ConfigureEfCore(ServiceConfigurationContext context)
+    //{
+    //    context.Services.AddAbpDbContext<CurrencyServiceDbContext>(options =>
+    //    {
+    //        /* You can remove "includeAllEntities: true" to create
+    //         * default repositories only for aggregate roots
+    //         * Documentation: https://docs.abp.io/en/abp/latest/Entity-Framework-Core#add-default-repositories
+    //         */
+    //        options.AddDefaultRepositories(includeAllEntities: true);
+    //    });
+
+    //    Configure<AbpDbContextOptions>(options =>
+    //    {
+    //        options.Configure(configurationContext =>
+    //        {
+    //            configurationContext.UseSqlServer();
+    //        });
+    //    });
+
+    //}
     private void ConfigureAuthentication(ServiceConfigurationContext context)
     {
         context.Services.ForwardIdentityAuthenticationForBearer(OpenIddictValidationAspNetCoreDefaults.AuthenticationScheme);

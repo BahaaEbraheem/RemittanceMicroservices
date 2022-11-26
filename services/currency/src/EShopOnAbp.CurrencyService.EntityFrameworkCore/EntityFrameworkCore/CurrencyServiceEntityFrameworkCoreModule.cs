@@ -1,5 +1,6 @@
 ﻿using EShopOnAbp.CurrencyService.Currencies;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.Modularity;
 
@@ -20,19 +21,20 @@ public class CurrencyServiceEntityFrameworkCoreModule : AbpModule
             options.AddDefaultRepositories(includeAllEntities: true);
 
         });
-        //Configure<AbpDbContextOptions>(options =>
-        //{
-        //    /* The main point to change your DBMS.
-        //     * See also OrderingServiceMigrationsDbContextFactory for EF Core tooling. */
-        //    options.Configure<CurrencyServiceDbContext>(c =>
-        //    {
-        //        c.UseSqlServer(b =>
-        //        {
-        //            //b.MigrationsHistoryTable("__CurrencyService_Migrations");
-        //            b.MigrationsHistoryTable("__CurrencyService_Migrations");
-        //        });
-        //    });
-        //});
+        Configure<AbpDbContextOptions>(options =>
+        {
+            /* The main point to change your DBMS.
+             * See also OrderingServiceMigrationsDbContextFactory for EF Core tooling. */
+            options.Configure<CurrencyServiceDbContext>(c =>
+            {
+
+                c.UseSqlServer(b =>
+                {
+                    //b.MigrationsHistoryTable("__CurrencyService_Migrations");
+                    b.MigrationsHistoryTable("__CurrencyService_Migrations");
+                });
+            });
+        });
 
     }
 
