@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using EShopOnAbp.CurrencyService.Currencies;
+using EShopOnAbp.CustomerService.Customers;
 
 namespace EShopOnAbp.PublicBlazor.ObjectMapping;
 
@@ -13,7 +14,8 @@ public class PublicBlazorAutoMapperProfile : Profile
           .ForMember(model => model.CreatorId, option => option.Ignore())
           .ForMember(model => model.CreationTime, option => option.Ignore())
           .ForMember(model => model.LastModificationTime, option => option.Ignore());
-
+        CreateMap<CurrencyDto, CreateUpdateCurrencyDto>();
+        CreateMap<CustomerDto, CreateUpdateCustomerDto>();
 
         CreateMap<CreateUpdateCurrencyDto, Currency>()
               .ForMember(model => model.ExtraProperties, option => option.Ignore())
