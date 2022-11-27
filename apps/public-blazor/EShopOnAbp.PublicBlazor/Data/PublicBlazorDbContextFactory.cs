@@ -11,7 +11,7 @@ public class PublicBlazorDbContextFactory : IDesignTimeDbContextFactory<PublicBl
         var configuration = BuildConfiguration();
 
         var builder = new DbContextOptionsBuilder<PublicBlazorDbContext>()
-            .UseSqlServer(configuration.GetConnectionString("Default"));
+            .UseSqlServer(configuration.GetConnectionString("IdentityService"));
 
         return new PublicBlazorDbContext(builder.Options);
     }

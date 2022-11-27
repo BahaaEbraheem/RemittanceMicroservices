@@ -371,7 +371,7 @@ public class PublicBlazorModule : AbpModule
 
 
 
-        // ConfigureAuthentication(context);
+        ConfigureAuthentication(context);
         ConfigureUrls(configuration);
         ConfigureBundles();
         ConfigureAutoMapper(context);
@@ -415,7 +415,7 @@ public class PublicBlazorModule : AbpModule
         Configure<AppUrlOptions>(options =>
         {
             options.Applications["MVC"].RootUrl = configuration["App:SelfUrl"];
-            options.RedirectAllowedUrls.AddRange(configuration["App:RedirectAllowedUrls"].Split(','));
+        //    options.RedirectAllowedUrls.AddRange(configuration["App:RedirectAllowedUrls"].Split(','));
         });
     }
 
@@ -565,8 +565,9 @@ public class PublicBlazorModule : AbpModule
         var emailClaim = claims.FirstOrDefault(x => x.Type == ClaimTypes.Email);
         var isEmailVerified = claims.FirstOrDefault(x => x.Type == "email_verified")?.Value == "true";
         var phoneNumberClaim = claims.FirstOrDefault(x => x.Type == "phone");
-        var userIdString = claims.First(t => t.Type == ClaimTypes.NameIdentifier).Value;
-
+       var userIdString = claims.First(t => t.Type == ClaimTypes.NameIdentifier).Value;
+       // var userIdString = claims.First(t => t.Type == "sub").Value;
+        //var userIdString = "3a07ab67-23f7-95f7-27cb-67fc1b6c2385";
         if (!Guid.TryParse(userIdString, out Guid userId))
         {
             logger.LogWarning(

@@ -6,6 +6,8 @@ using Localization.Resources.AbpUi;
 using Microsoft.Extensions.Configuration;
 using Volo.Abp.Account.Localization;
 using Volo.Abp.Authorization.Permissions;
+using Volo.Abp.Identity.Blazor;
+using Volo.Abp.SettingManagement.Blazor.Menus;
 using Volo.Abp.UI.Navigation;
 
 namespace EShopOnAbp.PublicBlazor.Menus
@@ -33,6 +35,7 @@ namespace EShopOnAbp.PublicBlazor.Menus
 
         private Task ConfigureMainMenuAsync(MenuConfigurationContext context)
         {
+            var administration = context.Menu.GetAdministration();
             var l = context.GetLocalizer<EShopOnAbpResource>();
 
             ////Home
@@ -64,7 +67,8 @@ namespace EShopOnAbp.PublicBlazor.Menus
                 )
                 );
 
-
+            //administration.SetSubItemOrder(IdentityMenuNames.GroupName, 2);
+            //administration.SetSubItemOrder(SettingManagementMenus.GroupName, 3);
             return Task.CompletedTask;
         }
 

@@ -26,13 +26,15 @@ public class PublicBlazorDbContext : AbpDbContext<PublicBlazorDbContext>
 
         /* Include modules to your migration db context */
 
-        builder.ConfigurePermissionManagement();
-        builder.ConfigureSettingManagement();
-        builder.ConfigureAuditLogging();
-        builder.ConfigureIdentity();
-        builder.ConfigureOpenIddict();
-        builder.ConfigureFeatureManagement();
-        builder.ConfigureTenantManagement();
+        //builder.ConfigurePermissionManagement();
+        //builder.ConfigureSettingManagement();
+        //builder.ConfigureAuditLogging();
+        //builder.ConfigureIdentity();
+        //builder.ConfigureOpenIddict();
+        //builder.ConfigureFeatureManagement();
+        //builder.ConfigureTenantManagement();
+
+
         //builder.ConfigureCurrencyService();
         //builder.ConfigureCustomerService();
 
